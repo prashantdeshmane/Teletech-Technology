@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sticky-top shadow-sm">
+        <header class="bg-white py-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center text-md-start">
+                        <a href="/index.html" class="navbar-brand fs-4">
+                            <img src="/assets/img/saivitthalalogo.png" class="img-fluid" width="130px" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-none d-md-block">
+                        <a class="btn contactbtn" href=" https://wa.me/+917821952912" target="_blank">WHATSAPP<i
+                                class="bi bi-whatsapp ms-2 fs-6"></i></a>
+                        <a href="#searchbar" class="btn btn-outline-dark rounded-0 ms-2 headicons"
+                            data-bs-toggle="offcanvas">
+                            <i class="bi bi-search"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light py-1">
+            <div class="container-fluid d-flex justify-content-evenly">
+                <div class="">
+                    <div class="headicons d-block d-sm-block d-md-none">
+                        <div class="row d-flex justify-content-end align-items-center">
+                            <div class="col-6">
+                                <a href="#searchbar" class="btn btn-outline-dark rounded-0 me-5 headicons border-0"
+                                    data-bs-toggle="offcanvas">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-end">
+                                    <button class="navbar-toggler ms-5 border-0 py-1" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+
+                                        <div class="line1"></div>
+                                        <div class="line2"></div>
+                                        <div class="line3"></div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item simplenav">
+                                <a title="home" href="/index.html" class="nav-link active text-semidark">Home</a>
+                            </li>
+                            <li class="nav-item simplenav">
+                                <a title="about" href="/about.html" class="nav-link text-semidark">About</a>
+                            </li>
+                            <li class="nav-item simplenav dropdown" id="servicesDropdown">
+                                <a title="categories" class="nav-link navbarlinks normal dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu categorydropdown shadow border-0 rounded-0">
+                                    <div class="d-flex flex-row">
+                                        <div>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/frenchdoor.html">french doors
+                                                </a></li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/aluwindows.html">aluminium windows</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/toughnedglasswork.html">toughned glass railing
+                                                </a></li>
+
+                                        </div>
+                                        <div>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="./categories/stainless.html">stainless still railing solutions
+                                                </a></li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="/categories/upvcwindows.html">UPVC
+                                                    windows</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-sm py-2"
+                                                    href="/categories/upvcdoor.html">UPVC doors
+                                                </a></li>
+
+                                        </div>
+                                    </div>
+
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item simplenav">
+                                <a title="clients" href="/clients.html" class="nav-link text-semidark">Clients</a>
+                            </li>
+                            <li class="nav-item simplenav">
+                                <a title="gallery" href="/gallery.html" class="nav-link text-semidark">Gallery</a>
+                            </li>
+
+                            <li class="nav-item simplenav">
+                                <a title="contact" href="/contact.html" class="nav-link text-semidark">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="mb-5">
+        <!-- <section class="banner position-relative">
+            <img src="/assets/img/bghead.jpg" class="d-block w-100" alt="">
+            <div class="position-absolute slide-50">
+                <h1 class="text-white mainheading" data-aos="fade-right" data-aos-duration="1000">Manufacturer of
+                    demountable partitions and doors, with an aluminium
+                    frame, for professional spaces</h1>
+
+                <button class="touchbtn" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="1000">
+                    LET'S TALK ABOUT YOUR PROJECT
+                </button>
+
+            </div>
+        </section> -->
+
+        <div id="slides" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active banner position-relative">
+                    <img src="/assets/img/bghead.jpg" class="d-block w-100 object-fit-cover" alt="">
+                    <div class="position-absolute slide-50">
+                        <h5 class="text-white mainheadingslide1 fs-4 animate__animated animate__fadeInDown">Welcome to
+                            Sai Vitthala Creation! With a strong legacy of excellence in the field of construction, we
+                            are your one-stop
+                            solution for a range of services</h5>
+
+
+                        <button class="touchbtn animate__animated animate__bounceInUp animate__slow"
+                            onclick="scrollToTalk()">
+                            LET'S TALK ABOUT YOUR PROJECT
+                        </button>
+
+                    </div>
+                </div>
+                <div class="carousel-item banner position-relative">
+                    <img src="/assets/img/doorslide.jpg" class="d-block w-100 object-fit-cover" alt="">
+                    <div class="position-absolute slide-10">
+                        <h2 class="text-white mainheadingslide2 fs-2 animate__animated animate__fadeInUp">Saivitthala
+                            Doors & Windows</h2>
+
+                        <p class="mb-0 mt-4 text-white fw-normal text-md animate__animated animate__fadeInUp animate__slow"
+                            style="letter-spacing: 1px;">At Saivitthala Doors & Windows, we take pride in every custom
+                            modern, and <br>contemporary French door that we produce using only the best quality
+                            materials and highly skilled labor.</p>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item banner position-relative">
+                    <img src="/assets/img/glasslide.jpg" class="d-block w-100 object-fit-cover" alt="">
+                    <div class="position-absolute slide-10">
+                        <h2 class="text-white mainheadingslide2 fs-2 animate__animated animate__fadeInDown">French Door
+                            Design</h2>
+
+                        <p class="mb-0 mt-4 text-white fw-normal text-md animate__animated animate__fadeInDown animate__slow"
+                            style="letter-spacing: 1px;">HnK’s design solutions use space, color, materials, energy
+                            and<br>light as tools to create healthy environments that enhance<br>performance.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="services my-5">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <span class="text-dark fw-lighter fs-3 text-center">Let’s design tomorrow’s spaces together
+                    </span>
+                    <p class="text-dark text-lg mb-0 py-3 text-center fw-light nunitofont">Say goodbye to the hassle of managing multiple vendor for
+                        your
+                        projects and embrace the convenience of finding all your work needs under a single roof with Sai
+                        Vitthala Creation</p>
+                    <div class="col-md-9">
+                        <div class="card mt-5  py-5 position-relative strcards">
+                            <span class="position-absolute uppertext text-danger fw-semibold">At Sai Vitthala Creations,our strengths lie in several key areas :</span>
+                            <span class="position-absolute downtext text-danger fw-semibold">And always committed for quality work</span>
+                            <div class="row gy-4">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo1.png" class="img-fluid" width="70px" alt="">
+                                            <span class="text-lg text-black">Expertise</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo2.png" class="img-fluid" width="70px" alt="">
+                                            <span class="text-lg text-black">Comprehensive Services</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo3.png" class="img-fluid" width="70px" alt="">
+                                            <span class="text-lg text-black">Quality Materials</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo4.png" class="img-fluid" width="65px" alt="">
+                                            <span class="text-lg text-black">Customer-Centric Approch</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo5.png" class="img-fluid" width="60px" alt="">
+                                            <span class="text-lg text-black">Innovation</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo6.png" class="img-fluid" width="55px" alt="">
+                                            <span class="text-lg text-black">Reliability</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo7.png" class="img-fluid" width="60px" alt="">
+                                            <span class="text-lg text-black">Attention to Detail</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo8.png" class="img-fluid" width="60px" alt="">
+                                            <span class="text-lg text-black">Diverse Portfolio</span>
+                                        </div>
+
+                                  
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                   
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="/assets/img/logo9.png" class="img-fluid" width="60px" alt="">
+                                            <span class="text-lg text-black">Client Relationships</span>
+                                        </div>
+
+                                  
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-semidark fs-3 fw-lighter bars"><span>What our clients say</span></h3>
+                </div>
+
+                <div class="row  slider">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala sets the standard for excellence in service and commitment. Their attention to detail and dedication to customer satisfaction are truly commendable. I wouldn't hesitate to recommend them to anyone in need of their expertise."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Samnani Group</h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"I'm continually impressed by the level of professionalism and care provided by Sai Vitthala. Their team consistently goes the extra mile to ensure that every aspect of the service exceeds expectations. Thank you for your outstanding commitment!"</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Adityaraj estate 
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Choosing Sai Vitthala was one of the best decisions I've made. From start to finish-French door,sliding windows and Glass Railling their service was impeccable, and their commitment to delivering results was unwavering. I'm incredibly grateful for their expertise and would wholeheartedly recommend them to others"</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Ambe Devleoper 
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala's commitment to excellence is truly unmatched. Their team's professionalism and dedication to delivering top-notch service shine through in every interaction. I'm grateful for their expertise and highly recommend them to anyone seeking reliable and high-quality service"</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Pratik Construction Mr. Anil Dolse.
+
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala's commitment to excellence is truly unmatched. Their team's professionalism and dedication to delivering top-notch service shine through in every interaction. I'm grateful for their expertise and highly recommend them to anyone seeking reliable and high-quality service"</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">MyModak Software Solutions
+
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"I can't say enough positive things about Sai Vitthala. Their level of service and commitment to customer satisfaction are exceptional. It's rare to find a company that consistently exceeds expectations, but Sai Vitthala does just that. I'm a loyal customer and will continue to recommend them to others."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">GPS Builder and Devlopers
+
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala has set a new standard for service excellence. From the initial consultation to the final result, every step of the process was seamless and stress-free. Their team's dedication to delivering outstanding service is evident in the exceptional results they consistently achieve. I'm thrilled with my experience and wouldn't hesitate to recommend them."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Radhika Construction 
+
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala truly understands the meaning of exceptional service and commitment. Their team's professionalism, attention to detail, and dedication to customer satisfaction are unparalleled. It's refreshing to work with a company that genuinely cares about their clients. I highly recommend Sai Vitthala to anyone in need of their services."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Neelkant Devleoper 
+
+                            </h5>
+                            <span class="text-md text-semidark">Sangamner</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"I am incredibly impressed with Sai Vitthala's level of expertise and dedication. From the moment I reached out to them, I knew I was in good hands. Their team's commitment to delivering results is evident in the quality of their work. I'm grateful for their outstanding service and would not hesitate to recommend them to others."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">DRN Concert Solution 
+
+                            </h5>
+                            <span class="text-md text-semidark">Pune</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"I am incredibly impressed with Sai Vitthala's level of expertise and dedication. From the moment I reached out to them, I knew I was in good hands. Their team's commitment to delivering results is evident in the quality of their work. I'm grateful for their outstanding service and would not hesitate to recommend them to others."</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">DRN Concert Solution 
+
+                            </h5>
+                            <span class="text-md text-semidark">Pune</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="text-center">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text text-md bg-secondary shadow-sm rounded p-4 pt-5 mb-5">
+                                    <div
+                                        class="btn-square bg-white shadow border rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-right text-main"></i>
+                                    </div>
+                                    <p style="text-align: justify;">"Sai Vitthala's commitment to excellence shines through in everything they do. Their team's passion for their work and dedication to customer satisfaction are evident in the exceptional service they provide. Working with them has been a pleasure, and I highly recommend their services to anyone looking for professionalism and quality"</p>
+                                </div>
+
+                            </div>
+                            <h5 class="text-dark">Shree Construction 
+
+                            </h5>
+                            <span class="text-md text-semidark">Nashik</span>
+                        </div>
+
+                    </div>
+                
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <section class="bg-dark py-5 mt-4">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 col-sm-12">
+                        <span class="text-secondary py-2 text-xl" data-aos="fade-right" data-aos-offset="100"
+                            data-aos-duration="1000">Want to know more?</span>
+                        <h1 class="display-6 fs-2 text-light mt-3" data-aos="fade-right" data-aos-offset="150"
+                            data-aos-duration="1000">Consult our broucher</h1>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="text-center">
+                            <a href="/assets/img/Sai Vithhala Creation Catalog.pdf" target="_blank"
+                                class="position-relative broucher">
+                                <div class="link" data-aos="fade-left" data-aos-offset="150" data-aos-duration="1000">
+                                    <img src="/assets/img/external-link.png" class="img-fluid" alt="">
+                                </div>
+                                <img src="/assets/img/pamplet/Product Catalog.pdf.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-2" id="workform">
+
+        </div>
+        <section class="py-5 mt-5 bg-secondary">
+            <div class="container-fluid text-center">
+
+                <div class="row d-flex justify-content-center my-3">
+                    <div class="col-md-7">
+                        <div class="card border-0 shadow-sm rounded-3">
+                            <div class="card-body">
+                                <h4 class="text-semidark py-3">Let's talk about your work!
+                                </h4>
+                                <div class="workform">
+                                    <form action="https://formsubmit.co/saivitthala.creation1@gmail.com" method="post" class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com" name="name">
+                                                <label for="floatingInput">Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com" name="mobile">
+                                                <label for="floatingInput">Mobile</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com" name="city">
+                                                <label for="floatingInput">City</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelect"
+                                                    aria-label="Floating label select example" name="work">
+    
+                                                    <option value="Window">Window</option>
+                                                    <option value="Door">Door</option>
+                                                    <option value="Toughned glass work">Toughned glass work</option>
+                                                    <option value="Stainless steel work">Stainless steel work</option>
+                                                    <option value="UPVC Doo">UPVC Door</option>
+                                                    <option value="UPVC window">UPVC window</option>
+                                                </select>
+                                                <label for="floatingSelect">Choose Work category</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" name="comment" placeholder="Leave a comment here"
+                                                    id="floatingTextarea2" style="height: 100px"></textarea>
+                                                <label for="floatingTextarea2">Comments</label>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                                        <div class="mt-4 text-start">
+                                            <button class="btn rounded-0 btn-dark" type="submit">SUBMIT</button>
+                                        </div>
+                                    </form>
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://wa.me/+917821952912" target="_blank" class="wpchat d-block d-sm-block d-md-none">
+            <img src="/assets/img/whatsapp.png" class="img-fluid" width="45px" alt="whatsapp">
+        </a>
+    </main>
+
+    <footer class="bg-dark text-light mt-5">
+        <div class="text-center pt-3">
+            <span class="text-white text-sm">© 2024 Saivitthala Creations,All rights reserved.</span>
+        </div>
+        <div class="container-fluid pt-3 pb-3 wow fadeIn">
+           
+            <div class="py-4">
+                <div class="row w-100">
+                    <div class="col-md-2 col-sm-6 col-12">
+                        <div class="" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
+                            <img src="/assets/img/saivitthalalogo.png" class="img-fluid" width="150" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/about.html">About</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/clients.html">Clients</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/gallery.html">Gallery</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/contact.html">Contact</a>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <h5 class="text-white mb-4">Categories</h5>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank" href="/categories/frenchdoor.html">French
+                                door</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" href="/categories/aluwindows.html">aluminium windows</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link  text-normal" target="_blank"
+                                href="/categories/toughnedglasswork.html">Toughned glasswork</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/stainless.html">Stainless
+                                steelwork</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/upvcwindows.html">UPVC
+                                Window</a>
+                        </span>
+                        <span class="d-flex flex-row align-items-center pb-3 text-normal quicklinks">
+                            <i class="bi bi-chevron-right me-1"></i>
+                            <a class="nav-link text-normal" target="_blank" href="/categories/upvcdoor.html">UPVC
+                                door</a>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12  text-normal">
+                        <a target="_blank" href="https://wa.me/+917821952912"
+                            class="pb-1 mb-2 text-white text-decoration-none text-sm">
+                            <p class="mb-0"><i class="fa fa-phone-alt me-3"></i>+91-7821952912</p>
+                        </a><a target="_blank" href="mailto:saivitthala.creation1@gmail.com"
+                            class="mb-2 text-white text-decoration-none">
+                            <p class="mt-2"><i class="fa fa-envelope me-3"></i>saivitthala.creation1@gmail.com</p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="fas fa-map-marker-alt me-3"></i><span>Nashik office :</span>
+                            <p class="mt-2">Near shirode Hyundai,Nashik-pune
+                                road,Nashik</p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="bi bi-hammer me-3"></i><span class="mb-2">Nashik workshop :</span>
+                            <p class="mt-2">DGP nagar 1,Datir farm lane no 2,Ambad,nashik</p>
+                        </a>
+                        <a target="_blank" class="mb-2 text-white text-decoration-none text-sm">
+                            <i class="fas fa-map-marker-alt me-3"></i><span class="mb-2">Sangmner office & workshop
+                                :</span>
+                            <p class="mt-2">Yash enterprise, Rajmata Jijau Marg (Malda Road), Near Ganesh Vihar, Opp.
+                                Pasaydan Colony, Sangamner-422605 Dist. Ahmedinagar</p>
+                        </a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-2" target="_blank" href="https://www.facebook.com/profile.php?id=100093305478945"><i
+                                    class="fab fa-facebook-f"></i></a><a
+                                class="btn btn-square btn-outline-light rounded-circle me-2" target="_blank"
+                                href="https://www.instagram.com/saivitthala.creation1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-yellow text-center py-2">
+            <span class="text-black text-sm fw-semibold">Powered by Increditex Software Solutions Pvt.Ltd</span>
+    </div>
+
+
+    <div class="offcanvas offcanvas-top searchbarbody" id="searchbar">
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="input-group w-50 searchinput">
+                    <input type="text" class="form-control border-0 shadow-none bg-transparent text-yellow text-sm"
+                        placeholder="Search for content">
+                    <span class="input-group-text bg-transparent border-0"><i
+                            class="bi bi-search text-yellow"></i></span>
+                </div>
+                <button class="btn-close shadow-none ms-5 btn-close-white btn-sm" data-bs-dismiss="offcanvas"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start sidebar" id="sidebar">
+
+        <div class="offcanvas-body">
+            <div class="text-end">
+                <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="pt-3">
+                <ul class="list-unstyled text-center fs-6">
+                    <li class="nav-item simplenav py-3">
+                        <a title="about" href="/index.html" class="nav-link active text-light">Home</a>
+                    </li>
+                    <li class="nav-item simplenav py-3">
+                        <a title="about" href="/about.html" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item simplenav dropdown" id="servicesDropdown">
+                        <a title="categories" class="nav-link navbarlinks text-white py-3 normal dropdown-toggle"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 rounded-0 bg-semidark">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/frenchdoor.html">french doors
+                                        </a></li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/aluwindows.html">aluminium windows</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/toughnedglasswork.html">toughned glass railing
+                                        </a></li>
+
+                                </div>
+                                <div>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="./categories/stainless.html">stainless still railing solutions
+                                        </a></li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="/categories/upvcwindows.html">UPVC
+                                            windows</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white text-sm py-2"
+                                            href="/categories/upvcdoor.html">UPVC doors
+                                        </a></li>
+
+                                </div>
+                            </div>
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item simplenav py-3">
+                        <a title="clients" href="/clients.html" class="nav-link text-light">Clients</a>
+                    </li>
+                    <li class="nav-item simplenav py-3">
+                        <a title="gallery" href="/gallery.html" class="nav-link text-light">Gallery</a>
+                    </li>
+
+                    <li class="nav-item simplenav py-3">
+                        <a title="contact" href="/contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1c9005996e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function scrollToTalk() {
+            var talksection = document.getElementById("workform");
+
+            talksection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            autoplay: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplaySpeed: 1000,
+            centerMode: true,
+            centerPadding: '20',
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 767.5,
+                    settings: {
+                        centerPadding: '10px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
