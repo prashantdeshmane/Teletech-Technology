@@ -595,4 +595,8 @@ body {
     .strcards .downtext{
        bottom: -30px;
     }
+    .testimonial-item .testimonial-text{
+        height: 300px;
+    }
 }
+
